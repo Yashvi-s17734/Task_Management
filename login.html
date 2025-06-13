@@ -33,7 +33,7 @@
             form.addEventListener("submit",(e)=>{
                 if(email.value=="abcd123@gmail.com" && password.value=="12345678"){
                     alert("Logged in successfully!");
-                    form.action = "dashboard.html";
+                    form.action = "index.html";
                     localStorage.setItem('isLogin', JSON.stringify(true));
                 }else{
                     invalid.textContent = "invalid email or password"
